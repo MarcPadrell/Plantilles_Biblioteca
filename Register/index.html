@@ -11,55 +11,76 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/checkout/">
+
+
 
 </head>
 
 <body>
 
-    <div class="login-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <h2 class="mb-3 text-center text-white">Inicia Sesión en T-PRESTAMOS</h2>
+    <div class="login-page ">
+        <div class="container ">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-5 offset-lg">
+                    <h2 class="mb-2 text-center text-white">Registro en T-PRESTAMOS</h2>
                     <div class="bg-white shadow rounded">
                         <div class="row">
-                            <div class="col-md-7 pe-0">
-                                <div class="form-left h-100 py-5 px-5">
-                                    <h3>Login</h3>
-                                    <p class="text-muted">Acceder a tu cuenta</p>
-                                    <form action="" class="row g-4">
-                                        <div class="col-12">
-                                            <label>Usuario<span class="text-danger">*</span></label>
-                                            <div class="input-group">
-                                                <div class="input-group-text"><i class="bi bi-lock-fill"><img src="img/user.png" id="tiny" alt=""></i></div>
-                                                <input type="text" class="form-control" placeholder="Introducir Usuario">
+                            <div class="col-md pe-0">
+                                <div class="form-left h-100 py-4 px-5">
+                                    <h3>Sign up</h3>
+                                    <form class="needs-validation" novalidate>
+                                        <div class="row g-2">
+                                            <div class="col-sm-6">
+                                                <label for="firstName" class="form-label">Nombre</label>
+                                                <input type="text" class="form-control" id="firstName"
+                                                    placeholder="Nombre" value="" required>
+                                                <div class="invalid-feedback">
+                                                    Valid first name is required.
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <label>Contraseña<span class="text-danger">*</span></label>
-                                            <div class="input-group">
-                                                <div class="input-group-text"><i class="bi bi-lock-fill"><img src="img/padlock.png" id="tiny" alt=""></i></div>
-                                                <input type="text" class="form-control" placeholder="Introducir Contraseña">
+
+                                            <div class="col-sm-6">
+                                                <label for="lastName" class="form-label">Fecha nacimiento</label>
+                                                <input type="text" class="form-control" id="lastName"
+                                                    placeholder="" value="" required>
+                                                <div class="invalid-feedback">
+                                                    Valid last name is required.
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-9">
-                                            <button type="submit"
-                                                class="btn px-4 text-white float-end">Acceder</button>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <button type="submit"
-                                                class="btn px-4 text-white float-end">Registrarse</button>
-                                        </div>
+
+                                            <div class="col-12">
+                                                <label for="username" class="form-label">Email</label>
+                                                <div class="input-group has-validation">
+                                                    <span class="input-group-text">@</span>
+                                                    <input type="text" class="form-control" id="username"
+                                                        placeholder="ejemplo@ejemplo.com" required>
+                                                    <div class="invalid-feedback">
+                                                        Your username is required.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 mb-2">
+                                                <label for="address" class="form-label">Contraseña</label>
+                                                <input type="text" class="form-control" id="address"
+                                                    placeholder="Contraseña" required>
+                                                <div class="invalid-feedback">
+                                                    Please enter your shipping address.
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 mb-2">
+                                                <label for="address" class="form-label">Repetir contraseña</label>
+                                                <input type="text" class="form-control" id="address"
+                                                    placeholder="Repetir contraseña" required>
+                                                <div class="invalid-feedback">
+                                                    Please enter your shipping address.
+                                                </div>
+                                            </div>
+                                            <button class="w-100 text-white btn btn-lg">Continue to
+                                                checkout</button>
                                     </form>
-                                </div>
-                            </div>
-                            <div class="col-md-5 ps-0 d-none d-md-block">
-                                <div class="form-right h-100 text-white p-3" style="background-color: #E91E63;">
-                                    <h3>Encontrarás...</h3>
-                                    <p style="text-align: justify;">¡El innovador sistema dedicado a la gestión de préstamo de libros de nuestra empresa, T-Systems, donde no solo podrás conocer nuevos libros, sino que tendrás la posibilidad de encontrar compañeros tan fanáticos por la lectura como tú!</p>
-                                    <div class="text-center">
-                                        <img src="img/logo.png" width="200px" alt="">
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -69,10 +90,20 @@
         </div>
     </div>
 
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/form-validation.js">
+
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
+
 
 </html>
