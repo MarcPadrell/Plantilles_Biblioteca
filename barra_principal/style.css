@@ -71,18 +71,6 @@ body {
     --dark-primari-color: #C2185B;
     --light-primari-color: #F8BBD0;
 }
-.navbar ul li{
-    position: relative;
-    height: 72px;
-    list-style: none;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-   
-}
-.navbar ul li.hovered,
-.navbar ul li:hover{
-    background: var(--white);
-}
 .navbar ul li a{
     position: relative;
     display: block;
@@ -96,7 +84,7 @@ body {
 .navbar ul li.hovered a{
     color: var(--dark-primari-color);
 }
-.navigation ul li a .icon{
+.navbar ul li a .icon{
     position: relative;
     display: block;
     min-width: 60px;
@@ -104,12 +92,13 @@ body {
     line-height: 70px;
     text-align: center;
 }
-.navigation ul li a .icon ion-icon{
+.navbar ul li a .icon ion-icon{
     font-size: 1.75em;
 }
-.navigation ul li a .icon i{
+.navbar ul li a .icon i{
     font-size: 1.5em;
 }
+
 .navbar ul li a .title{
     position: relative;
     display: block;
@@ -120,7 +109,10 @@ body {
     text-align: start;
     white-space: nowrap;
 }
+
+
 /* curve outside */
+@media (min-width: 768px){
 .navbar ul li:hover a::before,
 .navbar ul li.hovered a::before{
     content: '';
@@ -134,6 +126,7 @@ body {
     box-shadow: 35px -35px 0 13px var(--white);
     pointer-events: none;
 }
+
 .navbar ul li:hover a::after,
 .navbar ul li.hovered a::after{
     content: '';
@@ -146,6 +139,19 @@ body {
     border-radius: 50%;
     box-shadow: -35px -35px 0 12px var(--white);
     pointer-events: none;
+}
+.navbar ul li{
+    position: relative;
+    height: 72px;
+    list-style: none;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+   
+}
+.navbar ul li.hovered,
+.navbar ul li:hover{
+    background: var(--white);
+}
 }
 .nav-item{
     vertical-align: middle;
