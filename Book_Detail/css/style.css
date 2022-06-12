@@ -2,8 +2,21 @@ a {
     text-decoration: none;
 }
 
+#cat{
+    font-size: 20px;
+    margin: 0px;
+}
+
+#disp{
+    font-size: 20px;
+}
+
 #author{
     color: #c2185cde;
+}
+
+#isbn{
+    margin-left: 100px;
 }
 
 .form-right i {
