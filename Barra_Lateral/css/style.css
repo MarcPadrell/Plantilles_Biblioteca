@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
 }
 :root
 {
@@ -56,20 +56,20 @@ body{
     background: var(--white);
 }
 .navigation ul li:nth-child(1){
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     pointer-events: none;
 }
 .navigation ul li a{
     position: relative;
     display: block;
-    height: 100%;
+    width: 100%;
     display: flex;
     text-decoration: none;
     color: var(--white);
 }
 .navigation ul li:hover a,
 .navigation ul li.hovered a{
-    color: transparent;
+    color: var(--purple);
 }
 .navigation ul li a .icon{
     position: relative;
@@ -106,7 +106,7 @@ body{
     height: 50px;
     background: transparent;
     border-radius: 50%;
-    box-shadow: 35px 35px 0 10px;
+    box-shadow: 35px 35px 0 10px var(--white);
     pointer-events: none;
 }
 .navigation ul li:hover a::after,
@@ -119,7 +119,6 @@ body{
     height: 50px;
     background: transparent;
     border-radius: 50%;
-    box-shadow: 35px -35px 0 10px;
+    box-shadow: 35px -35px 0 10px var(--white);
     pointer-events: none;
 }
-
