@@ -2,20 +2,27 @@ a {
     text-decoration: none;
 }
 
-#cat{
+.card {
+    border: none;
+    box-shadow: 5px 6px 6px 9px #e9ecef;
+    border-radius: 12px;
+}
+
+
+#cat {
     font-size: 20px;
     margin: 0px;
 }
 
-#disp{
+#disp {
     font-size: 20px;
 }
 
-#author{
+#author {
     color: #c2185cde;
 }
 
-#isbn{
+#isbn {
     margin-left: 100px;
 }
 
@@ -23,10 +30,10 @@ a {
     font-size: 100px;
 }
 
-#rating {
-    margin-left: 8px;
+/* #rating {
+    margin-left: 80px;
     padding-left: 18px;
-}
+} */
 
 #tiny {
     padding-bottom: 3px;
