@@ -49,35 +49,19 @@ span {
     margin-left: 2px;
 }
 
-/* #change {
-    background-color: #FF4081;
-    margin-left: 1px;
-}
-
-#change:hover {
-    background-color: #F8BBd0;
-} */
-
 #change {
-    
-
     background-color:  var(--light-primari-color);
     color: var(--purple);
-    /* border-color: var(--pink2); */
-    
 }
 
 #change:hover {
-  
     background-color: var(--dark-primari-color);
     margin-left: 1px;
     color: var(--white);
-
 }
 
-
 body {
-    background-color: #f7f6f6
+    background-color: #f7f6f6;
 }
 
 .card {
@@ -111,6 +95,10 @@ body {
     margin-top: 4px;
 }
 
+#activo{
+    margin-right: .15em;
+}
+
 .check-icon {
 
     font-size: 17px;
@@ -120,12 +108,25 @@ body {
     margin-left: 3px;
 }
 
-.form-check-input {
-    margin-top: 6px;
-    margin-left: -24px !important;
-    cursor: pointer;
+.form-check-input{
+   border-color: #6c757d;
+}
+.form-check-input:hover{
+    background-color: var(--light-primari-color);
+
+    
+}
+.form-check-input:checked{
+    background-color: var(--pink2);
+    border-color: var(--white);
+    
 }
 
+.input-group-text{
+    background-color: var(--light-primari-color);
+    border-color: #6c757d;
+    
+}
 
 .form-check-input:focus {
     box-shadow: none;
