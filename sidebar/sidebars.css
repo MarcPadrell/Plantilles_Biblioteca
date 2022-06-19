@@ -1,4 +1,4 @@
-main {
+.t-prestamos-sidebar-main {
   height: 100vh;
   height: -webkit-fill-available;
   max-height: 100vh;
@@ -13,7 +13,7 @@ main {
 .container-fluid{
   height: 100vh;
 }
-:root
+/* :root
 {
     --purple: #E91E63;
     --white: #ffff;
@@ -25,7 +25,7 @@ main {
     --pink2: #ff4081;
     --dark-primari-color: #C2185B;
     --light-primari-color: #F8BBD0;
-}
+} */
 /* .t-prestamos-sidebar.active{
   width: 80px;
 } */
